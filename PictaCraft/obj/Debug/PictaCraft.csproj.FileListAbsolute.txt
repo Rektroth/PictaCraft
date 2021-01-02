@@ -1,0 +1,10 @@
+G:\My Drive\workspace\Software\PictaCraft\PictaCraft\bin\Debug\PictaCraft.exe.config
+G:\My Drive\workspace\Software\PictaCraft\PictaCraft\bin\Debug\PictaCraft.exe
+G:\My Drive\workspace\Software\PictaCraft\PictaCraft\bin\Debug\PictaCraft.pdb
+G:\My Drive\workspace\Software\PictaCraft\PictaCraft\obj\Debug\PictaCraft.MainForm.resources
+G:\My Drive\workspace\Software\PictaCraft\PictaCraft\obj\Debug\PictaCraft.Properties.Resources.resources
+G:\My Drive\workspace\Software\PictaCraft\PictaCraft\obj\Debug\PictaCraft.csproj.GenerateResource.Cache
+G:\My Drive\workspace\Software\PictaCraft\PictaCraft\obj\Debug\PictaCraft.csproj.CoreCompileInputs.cache
+G:\My Drive\workspace\Software\PictaCraft\PictaCraft\obj\Debug\PictaCraft.exe
+G:\My Drive\workspace\Software\PictaCraft\PictaCraft\obj\Debug\PictaCraft.pdb
+G:\My Drive\workspace\Software\PictaCraft\PictaCraft\obj\Debug\PictaCraft.csprojAssemblyReference.cache
