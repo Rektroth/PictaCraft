@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51E391A9-B001-486A-BE53-1710A8C4A655}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PictaCraft</RootNamespace>
+    <AssemblyName>PictaCraft</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictureBoxNearestNeighbor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedrock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bone_block_side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookshelf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coal_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coal_ore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coarse_dirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cobblestone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cobblestone_mossy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_brown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_cyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_light_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_lime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_magenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_brown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_cyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_light_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_lime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_magenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_purple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_powder_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_purple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\concrete_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crafting_table_front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crafting_table_side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamond_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamond_ore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirt_podzol_side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dispenser_front_horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dispenser_front_vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropper_front_horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropper_front_vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emerald_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emerald_ore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end_bricks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end_stone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\furnace_front_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\furnace_side.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
